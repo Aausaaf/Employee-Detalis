@@ -83,42 +83,42 @@ const Home = () => {
       const columns = useMemo(
         () => [
           {
-            accessorKey: "name", //simple recommended way to define a column
+            accessorKey: "name",
             header: "Name",
-            muiTableHeadCellProps: { sx: { color: "green" } } //custom props
+            muiTableHeadCellProps: { sx: { color: "green" } } 
           },
           {
-            accessorFn: (row) => row.email, //alternate way
-            id: "email", //id required if you use accessorFn instead of accessorKey
+            accessorFn: (row) => row.email, //
+            id: "email",
             header: "Email",
-            Header: <i style={{ color: "black" }}>Email</i> //optional custom markup
+            Header: <i style={{ color: "black" }}>Email</i> 
           },
           {
-            accessorFn: (row) => row.phone, //alternate way
-            id: "Phone No", //id required if you use accessorFn instead of accessorKey
+            accessorFn: (row) => row.phone, 
+            id: "Phone No", 
             header: "Phone No",
-            Header: <i style={{ color: "black" }}>Phone No</i> //optional custom markup
+            Header: <i style={{ color: "black" }}>Phone No</i> 
           },
           {
-            accessorFn: (row) => row.gender, //alternate way
-            id: "Gender", //id required if you use accessorFn instead of accessorKey
+            accessorFn: (row) => row.gender, 
+            id: "Gender", 
             header: "Gender",
             type:"radio",
-            Header: <i style={{ color: "black" }}>Gender</i> //optional custom markup
+            Header: <i style={{ color: "black" }}>Gender</i> 
           },
           {
-            accessorFn: (row) => row.hobbies, //alternate way
-            id: "hobbies", //id required if you use accessorFn instead of accessorKey
+            accessorFn: (row) => row.hobbies, 
+            id: "hobbies",
             header: "Hobbies",
             type:"checkbox",
-            Header: <i style={{ color: "black" }}>Hobbies</i> //optional custom markup
+            Header: <i style={{ color: "black" }}>Hobbies</i>
           },
           {
-            accessorFn: (row) => row.DOB, //alternate way
-            id: "DOB", //id required if you use accessorFn instead of accessorKey
+            accessorFn: (row) => row.DOB, 
+            id: "DOB", 
             header: "DOB",
             type:"date",
-            Header: <i style={{ color: "black" }}>DOB</i> //optional custom markup
+            Header: <i style={{ color: "black" }}>DOB</i> 
           }
         ],
         []
@@ -131,18 +131,12 @@ const Home = () => {
   
       useEffect(()=>{
 
-        // dispatch(deletedata(1))
-      //    postdata({
-      //     name:"Aausaf",
-      //     email:"aausafalam585@gmail.com",
-      //     hobby:"Aau",
-      //     gender:"male"
-      //    })
+      
    
       dispatch(getdata())
       setdata(store)
 
-       // patchdata({name:"Aausaf"},3)
+      
         },[])
        
 

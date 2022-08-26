@@ -1,11 +1,74 @@
 {
   "employessdetails": [
     {
+      "id": 1,
+      "name": "Camellia Fontanet",
+      "DOB": "4/22/2022",
+      "email": "cfontanety@123-reg.co.uk",
+      "gender": "Female",
+      "phone": "640 101 6347",
+      "hobbies": "Candelabrum Monkeyflower"
+    },
+    {
+      "id":2,
+      "name": "Maurizio Reek",
+      "DOB": "6/16/2022",
+      "email": "mreekz@loc.gov",
+      "gender": "Male",
+      "phone": "221 916 9876",
+      "hobbies": "Arrow Bamboo"
+    },
+    {
+      "id": 3,
+      "name": "Colette Dorgan",
+      "DOB": "8/23/2022",
+      "email": "cdorgan10@alibaba.com",
+      "gender": "Female",
+      "phone": "826 914 6744",
+      "hobbies": "Wyoming Flax"
+    },
+    {
+      "id": 4,
+      "name": "Hort Fewell",
+      "DOB": "8/18/2022",
+      "email": "hfewell11@odnoklassniki.ru",
+      "gender": "Male",
+      "phone": "550 303 2433",
+      "hobbies": "Ragged Marsh-elder"
+    },
+    {
+      "id": 5,
+      "name": "Nanny Canete",
+      "DOB": "10/4/2021",
+      "email": "ncanete12@java.com",
+      "gender": "Female",
+      "phone": "733 131 4145",
+      "hobbies": "Pine-leaf Bottlebrush"
+    },
+    {
+      "id": 6,
+      "name": "Ingamar Seally",
+      "DOB": "12/24/2021",
+      "email": "iseally13@irs.gov",
+      "gender": "Male",
+      "phone": "594 808 1906",
+      "hobbies": "Neofuscelia Lichen"
+    },
+    {
+      "id": 7,
+      "name": "Letizia john",
+      "DOB": "10/22/2021",
+      "email": "lwinslet7@ifeng.com",
+      "gender": "female",
+      "phone": "124 914 9356",
+      "hobbies": "Slim Tridens"
+    },
+    {
       "id": 8,
       "name": "Letizia Winsleasede",
       "DOB": "10/22/2021",
       "email": "lwinslet7@ifeng.com",
-      "gender": "Female",
+      "gender": "female",
       "phone": "124 914 9356",
       "hobbies": "Slim Tridens"
     },
@@ -128,7 +191,7 @@
     },
     {
       "id": 23,
-      "name": "Giffy Butten",
+      "name": "Giffy Buttens",
       "DOB": "7/6/2022",
       "email": "gbuttenm@clickbank.net",
       "gender": "Male",
@@ -853,6 +916,15 @@
       "phone": "2022-08-26T01:43:09.373Z",
       "city": "12",
       "id": 103
+    },
+    {
+      "name": "Aausaf Alam",
+      "email": "aausafalam585@gmail.com",
+      "phone": "07033432213",
+      "gender": "male",
+      "hobbies": "cricket",
+      "DOB": "2022-08-26T08:37:47.245Z",
+      "id": 104
     }
   ]
 }

@@ -71,3 +71,44 @@ export const getdata = () =>  (dispatch) => {
 
     })
 }
+
+
+
+ 
+export const postdata = (data) => (dispatch) => {
+    axios.post(`http://localhost:8080/employessdetails`,data)
+    .then((res)=>{
+      if(res.data)
+      {
+          console.log(res.data)
+          dispatch(getdata())
+      }
+      else
+      {
+          alert("Some Error")
+      }
+    }).catch((err)=>{
+      console.log(err)
+      alert(err.message)
+    })
+ }
+
+
+
+ export const patchdata = (data,index) => (dispatch) => {
+    axios.patch(`http://localhost:8080/employessdetails/${index}`,data)
+    .then((res)=>{
+      if(res.data)
+      {
+          console.log(res.data)
+          dispatch(getdata())
+      }
+      else
+      {
+          alert("Some Error")
+      }
+    }).catch((err)=>{
+      console.log(err)
+      alert(err.message)
+    })
+  }
