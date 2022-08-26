@@ -11,39 +11,55 @@ const Home = () => {
   
   
    const [name,setname] = useState("")
+
    const [email,setemail] = useState("")
+
    const [phone,setphone] = useState("")
+
    const [gender,setgender] = useState("")
+
    const [dob,setdob] = useState("")
+
    const [handleerror,sethandleerror] = useState(true)
+  
 
    const [hobbies,sethobbies] = useState("")
 
    const [data,setdata] = useState([])
+
    const {store}  = useSelector((store)=>store) 
+   
    const dispatch = useDispatch()
  
 
    const postdata = (data) => {
+
       axios.post(`http://localhost:8080/employessdetails`,data)
+
       .then((res)=>{
+
         if(res.data)
         {
             console.log(res.data)
+
             dispatch(getdata())
+
         }
         else
         {
             alert("Some Error")
         }
       }).catch((err)=>{
+
         console.log(err)
+
         alert(err.message)
       })
    }
    
 
    const patchdata = (data,index) => {
+
     axios.patch(`http://localhost:8080/employessdetails/${index}`,data)
     .then((res)=>{
       if(res.data)
@@ -63,6 +79,7 @@ const Home = () => {
  
 
   const add = (event) => {
+    
     event.preventDefault()
 
     postdata({
