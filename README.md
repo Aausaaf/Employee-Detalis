@@ -21,6 +21,9 @@ From vs code terminal please install the following things :
 #### npm i @mui/icons-material@5.10.2
 #### npm i axios
 
+ - please start json server at port 8080
+  #### json-server --watch db.json --port 8080
+  
 ## Notes :
 - please take care of all dependency what ever version in the above written please install those otherwise it will give error 
  - if this these will give error use  --force at last
