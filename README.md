@@ -28,9 +28,9 @@ From vs code terminal please install the following things :
  - please take care of all dependency what ever version in the above written please install those otherwise it will give error 
  - if this these will give error use  --force at last
 
-## frontend only deployed
+##  deploy link 
   https://employeesdetailsapp.netlify.app/
-  start json server at  json-server --watch db.json --port 8080 than employees data will visible.
+ 
 
 # Technologies Used
 
