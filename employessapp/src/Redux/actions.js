@@ -33,7 +33,7 @@ export const edit = (payload) => ({
 
 export const getdata = () =>  (dispatch) => {
 
-    axios.get(`http://localhost:8080/employessdetails`).then((res)=>{
+    axios.get(`https://example-hoga.herokuapp.com/employessdetails`).then((res)=>{
 
         //console.log(res.data)
        
@@ -48,7 +48,7 @@ export const getdata = () =>  (dispatch) => {
 
 
  export const deletedata = (id) => (dispatch) => {
-    axios.delete(`http://localhost:8080/employessdetails/${id}`).then((res)=>{
+    axios.delete(`https://example-hoga.herokuapp.com/employessdetails/${id}`).then((res)=>{
         if(res.data)
         {
             console.log(res.data)
@@ -60,7 +60,7 @@ export const getdata = () =>  (dispatch) => {
         console.log(err)
     })
 
-    axios.get(`http://localhost:8080/employessdetails`).then((res)=>{
+    axios.get(`https://example-hoga.herokuapp.com/employessdetails`).then((res)=>{
 
        // console.log(res.data)
        
@@ -76,7 +76,7 @@ export const getdata = () =>  (dispatch) => {
 
  
 export const postdata = (data) => (dispatch) => {
-    axios.post(`http://localhost:8080/employessdetails`,data)
+    axios.post(`https://example-hoga.herokuapp.com/employessdetails`,data)
     .then((res)=>{
       if(res.data)
       {
@@ -96,7 +96,7 @@ export const postdata = (data) => (dispatch) => {
 
 
  export const patchdata = (data,index) => (dispatch) => {
-    axios.patch(`http://localhost:8080/employessdetails/${index}`,data)
+    axios.patch(`https://example-hoga.herokuapp.com/employessdetails/${index}`,data)
     .then((res)=>{
       if(res.data)
       {

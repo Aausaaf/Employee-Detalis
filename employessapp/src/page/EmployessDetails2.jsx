@@ -34,7 +34,7 @@ const Home = () => {
 
    const postdata = (data) => {
 
-      axios.post(`http://localhost:8080/employessdetails`,data)
+      axios.post(`https://example-hoga.herokuapp.com/employessdetails`,data)
 
       .then((res)=>{
 
@@ -60,7 +60,7 @@ const Home = () => {
 
    const patchdata = (data,index) => {
 
-    axios.patch(`http://localhost:8080/employessdetails/${index}`,data)
+    axios.patch(`https://example-hoga.herokuapp.com/employessdetails/${index}`,data)
     .then((res)=>{
       if(res.data)
       {
